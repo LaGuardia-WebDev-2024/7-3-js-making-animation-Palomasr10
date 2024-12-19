@@ -8,6 +8,11 @@ var sunSize = 30;
 
 
 //🟢Draw Function - Runs on Repeat
+
+var y = 10;
+
+sunSize = 50;
+
 draw = function(){
   noStroke(); 
   
@@ -24,7 +29,12 @@ draw = function(){
   
   //ladybug
   fill(200,0,0);
-  ellipse(10, 350, 10, 10);
+  ellipse(y, 350, 10, 10);
+  
+  sunSize = sunSize + 1
+  
+  y = y + 1
+  
 }
 
 
